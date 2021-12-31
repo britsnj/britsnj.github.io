@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
-        <title>My Github Pages Landing Page</title>
+        <title>Nico Codes - Profile Page</title>
 
         <style type="text/css">
         
@@ -14,14 +14,173 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #page-header{
+            width: 100vw;
+            background-color: blue;
+            top: 0;
+            position: fixed;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #navbar{
+            width: inherit;
+            border: black 1px solid;
+            display: flex;
+            justify-content: flex-end;  
+        }
+
+        #nav-links{
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            width: 25%; 
+        }
+        .nav-link{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;   
+        }
+        li{
+            padding: 10px 20px 10px 20px;
+            flex: 1;
+        }
+        #pageContent{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #welcome-section{
+            width: 100vw;
+            height: 100vh;
+            background-color: #27282B;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;        
+        }
+        #projects{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;        
+        }
+
+        #tileContainer{
+            max-width: 700px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-around;
+        }
+        .project-tile{
+            margin: 10px;
+            display: grid;
+            grid-template-rows: 1fr 75px;
+        }
+        h1{
+            font-family: 'Righteous', cursive;
+            font-size: 400%;
+            color: rgb(226, 211, 211);
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            text-decoration: underline;
+            color:red;
+        }
+        #subHead{
+            font-family: 'Amatic SC', cursive;
+            font-size: 300%;
+            color: red;
+        }
+        .tile-link{
+            font-family: 'Abel', sans-serif;
+            text-decoration: none;
+            font-size: 150%;
+            text-align: center;
+            background-color: rgb(61, 60, 60);
+            color: rgb(194, 192, 192);
+        }
+        .tile-link:hover{
+            color: rgb(180, 85, 85);
+        }
+        .tile-image{
+            height: 250px;
+            width: 250px;
+        }
+
+        @media all and (max-width:1370px){
+
+        #navbar{
+            justify-content: center;
+        }
+
+        }
+
+        @media all and (max-width:540px){
+
+        #tileContainer{
+            justify-content: center;
+        }
+        h2{
+            font-size: 150%;  
+        }
+        }
+        #contact{
+        width: 100vw;
+        height: 100vh;
+        background-color: #27282B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+        }
+
+        #contact h2{
+
+        color: rgb(226, 211, 211);
+        }
+
 
         </style>
 
     </head>
+    <header id="page-header">
+        <nav id="navbar">
+          <ul id=nav-links>
+            <li><a class="nav-link" href="https://blog.nicobrits.dev">MY BLOG</a></li>
+            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            
+          </ul>
+        </nav>
+    </header>
     <body>
         <div class="container">
-            <h1 class="text-center text-danger">WELCOME TO MY PROJECTS PAGE</h1>
+            <h1 class="text-center text-danger">HI! MY NAME IS NICO!</h1>
+            <h2 class="text-center text-danger">Welcome to my page</h1>
         </div>
+
+        <section id="projects">
+            <h2>These are some of my projects</h2>
+            <div id="tileContainer">
+            <section class="project-tile">
+                <image class="tile-image" src="https://raw.githubusercontent.com/britsnj/hello-world/master/tribute.jpg">
+                  <a class = "tile-link" href="https://codepen.io/britsnj/full/KKwvQdN">Tibute Page</a>
+            </section>
+            <section class="project-tile">
+              <image class="tile-image" src="https://raw.githubusercontent.com/britsnj/hello-world/master/survey.jpg">
+              <a class="tile-link" href="https://codepen.io/britsnj/full/dyPzwZd">Survey Form</a>
+            </section>
+            <section class="project-tile">
+              <image class="tile-image" src="https://raw.githubusercontent.com/britsnj/hello-world/master/landing.jpg">
+                <a class="tile-link" href="https://codepen.io/britsnj/full/WNbMVaz">Product Landing Page</a>
+            </section>
+            <section class="project-tile">
+             <image class="tile-image" src="https://raw.githubusercontent.com/britsnj/hello-world/master/technical.jpg"> 
+              <a class="tile-link" href="https://codepen.io/britsnj/full/jObaLge">Technical Doc.</a>
+            </section>
 
 
 
